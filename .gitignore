@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+riderModule.iml
+workspace.xml
+tasks.xml
+
+# MacOS
+.DS_Store
