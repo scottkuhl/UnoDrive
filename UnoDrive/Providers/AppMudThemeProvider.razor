@@ -1,0 +1,77 @@
+<CascadingValue Value="false" Name="UsePopoverProvider">
+    <MudThemeProvider Theme="CustomTheme"></MudThemeProvider>
+</CascadingValue>
+
+@code {
+    
+    private static string[] _nativeFonts = ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI Variable", "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"];
+    
+    public static MudTheme CustomTheme => new()
+    {
+        Typography = new Typography
+        {
+            Body1 = new Body1
+            {
+                FontFamily = _nativeFonts
+            },
+            Body2 = new Body2
+            {
+                FontFamily = _nativeFonts
+            },
+            Button = new Button
+            {
+                FontFamily = _nativeFonts
+            },
+            Caption = new Caption
+            {
+                FontFamily = _nativeFonts
+            },
+            Default = new Default
+            {
+                FontFamily = _nativeFonts
+            },
+            H1 = new H1
+            {
+                FontFamily = _nativeFonts,
+                FontSize = "calc(1.375rem + 1.5vw)"
+            },
+            H2 = new H2
+            {
+                FontFamily = _nativeFonts,
+                FontSize = "calc(1.325rem + .9vw)"
+            },
+            H3 = new H3
+            {
+                FontFamily = _nativeFonts,
+                FontSize = "calc(1.3rem + .6vw)"
+            },
+            H4 = new H4
+            {
+                FontFamily = _nativeFonts,
+                FontSize = "calc(1.275rem + .3vw)"
+            },
+            H5 = new H5
+            {
+                FontFamily = _nativeFonts,
+                FontSize = "1.25rem"
+            },
+            H6 = new H6
+            {
+                FontFamily = _nativeFonts,
+                FontSize = "1rem"
+            },
+            Overline = new Overline
+            {
+                FontFamily = _nativeFonts
+            },
+            Subtitle1 = new Subtitle1
+            {
+                FontFamily = _nativeFonts
+            },
+            Subtitle2 = new Subtitle2
+            {
+                FontFamily = _nativeFonts
+            }
+        }
+    };
+}

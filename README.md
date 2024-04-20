@@ -28,6 +28,8 @@ To keep things consistent:
 ## User Experience
 
 - Since we will be using MudBlazor, the application will follow **[Material Design](https://material.io/develop/web)** for the web guidelines.
+- Custom application styling is in place to make the Material Design feel more platform native.  
+Including native fonts, a denser application bar, rounded navigation meni and buttons do not use all capital letters.
 
 ## Architecture
 

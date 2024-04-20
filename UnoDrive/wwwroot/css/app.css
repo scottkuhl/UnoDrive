@@ -2,6 +2,11 @@ h1:focus {
     outline: none;
 }
 
+button, .mud-button-label {
+    border-radius: 2px !important;
+    text-transform: none !important;
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -12,7 +17,7 @@ h1:focus {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    font-family: Roboto;
+    font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI Variable", "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #blazor-error-ui .dismiss {
@@ -57,7 +62,7 @@ h1:focus {
 .loading-progress-text {
     position: absolute;
     text-align: center;
-    font-family: Roboto;
+    font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI Variable", "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: bold;
     inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
 }
