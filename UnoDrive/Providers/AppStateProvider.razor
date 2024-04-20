@@ -1,0 +1,14 @@
+@inject AppState AppState
+
+@code {
+    private readonly CancellationTokenSource _tokenSource = new();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await AppState.InitializeAsync(_tokenSource.Token);
+        }
+    }
+}

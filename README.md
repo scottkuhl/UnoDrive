@@ -29,11 +29,26 @@ To keep things consistent:
 
 - Since we will be using MudBlazor, the application will follow **[Material Design](https://material.io/develop/web)** for the web guidelines.
 - Custom application styling is in place to make the Material Design feel more platform native.  
-Including native fonts, a denser application bar, rounded navigation meni and buttons do not use all capital letters.
+Including native fonts, native icons, a denser application bar, rounded navigation meni and buttons do not use all capital letters.
 
 ## Architecture
 
 The application is based on [Blazor Web Assembly](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor).
+
+### Components
+The application follows a typical organization of components for a Blazor app.
+- Common Blazor components are located in a Components namespace.
+- Components used for the main layout of the application are in the Layout namespace.
+- Blazor components that render as pages are in the Pages namespace.
+
+### Providers
+- MudBlazor exposes global functionality through Provider components.
+When the application implements and / or overrides provider components they are in the Providers namespace.
+- A custom provider for application state is used to initialize the service.
+
+### Services
+- JavaScript methods are combined into a single app.js file with a AppJs class to invoke them.
+- Application State is stored in memory with an event to notify components when it has changed.
 
 ## Reference
 
