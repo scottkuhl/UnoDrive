@@ -47,6 +47,7 @@ These references are presented in a logical order for review from start to finis
 ### Articles & Videos
 
 - **[Overview of Progressive Web Apps (PWAs)](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/)**: Progressive Web Apps (PWAs) provide access to open web technologies, to provide cross-platform interoperability. PWAs provide your users with an app-like experience that's customized for their devices.
+- **[How to Center in Screen Vertically and Horizontally](https://github.com/MudBlazor/MudBlazor/discussions/3008)**: How can I center a mud card horizontally and vertically in the screen?
 
 ### Documentation
 

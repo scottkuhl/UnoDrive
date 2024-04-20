@@ -1,0 +1,33 @@
+@page "/"
+
+@*
+<MudStack Justify="Justify.Center" AlignItems="AlignItems.Center" Row="true" Class="d-flex"
+          style="height: calc(100vh - (var(--mud-appbar-height) * 2));">
+    <MudGrid Spacing="3">
+        <MudItem xs="12">
+            <MudText Typo="Typo.h3" Align="Align.Center">Welcome to UnoDrive</MudText>
+            <MudText Typo="Typo.h4" Align="Align.Center">Uno Platform ❤️ OneDrive = UnoDrive</MudText>         
+        </MudItem>
+        <MudItem xs="12">
+            <MudPaper Class="d-flex justify-center" Elevation="0">
+                <MudButton Variant="Variant.Filled" Size="Size.Large">Login to UnoDrive</MudButton>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudStack>
+*@
+
+<MudStack Justify="Justify.Center" AlignItems="AlignItems.Center" Row="true" Class="d-flex"
+          style="height: calc(100vh - (var(--mud-appbar-height) * 2));">
+    <MudPaper Class="pa-3" Elevation="0">
+        <MudText Typo="Typo.h3" Align="Align.Center">Welcome to UnoDrive</MudText>
+        <MudText Typo="Typo.h4" Align="Align.Center">Uno Platform ❤️ OneDrive = UnoDrive</MudText>
+        <MudPaper Class="d-flex justify-center pa-3" Elevation="0">
+            <MudButton Variant="Variant.Filled" Size="Size.Large">Login to UnoDrive</MudButton>
+        </MudPaper>
+    </MudPaper>
+</MudStack>
+
+@code {
+
+}
