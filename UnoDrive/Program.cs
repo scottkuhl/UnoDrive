@@ -12,4 +12,10 @@ builder.Services.AddMudServices();
 builder.Services.AddSingleton<AppJs>();
 builder.Services.AddScoped<AppState>();
 
+#if DEBUG
+builder.Logging.SetMinimumLevel(LogLevel.Information);
+#else
+builder.Logging.SetMinimumLevel(LogLevel.Warning);
+#endif
+
 await builder.Build().RunAsync();
