@@ -1,6 +1,6 @@
 namespace UnoDrive.Services;
 
-public class AppState(AppJs appJs)
+public class AppState
 {
     private bool _isInitialized;
     
@@ -8,11 +8,10 @@ public class AppState(AppJs appJs)
     
     public string Theme { get; private set; } = string.Empty;
     
-    public async Task InitializeAsync(CancellationToken cancellationToken)
+    public void Initialize()
     {
         if (!_isInitialized)
         {
-            Theme = await appJs.ThemeAsync(cancellationToken);
             _isInitialized = true;
         }
 

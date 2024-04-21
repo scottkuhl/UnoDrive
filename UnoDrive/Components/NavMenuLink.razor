@@ -2,9 +2,9 @@
 
 <MudNavLink Href="@Href" Match="@Match" Style="margin-left: 0; margin-inline-end: 0">
     <div class="d-flex flex-grow-1 nav-link">
-        <Icon IconName="@Icon" Name="@Alt" Class="flex-none d-flex" />
+        <MudIcon Icon="@Icon" Title="@Name" Class="flex-none d-flex" />
         <div class="d-flex align-content-center flex-wrap flex-grow-1 gap-4 ps-2">
-            <MudText Typo="Typo.h6">@Alt</MudText>
+            <MudText Typo="Typo.h6">@Name</MudText>
         </div>
     </div>
 </MudNavLink>
@@ -14,6 +14,4 @@
     [Parameter, EditorRequired] public string Icon { get; set; } = string.Empty;
     [Parameter] public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
     [Parameter] public string Name { get; set; } = string.Empty;
-
-    private string Alt => !string.IsNullOrWhiteSpace(Name) ? Name : Icon;
 }

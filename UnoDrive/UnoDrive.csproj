@@ -25,4 +25,13 @@
         <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\images\icons\cupertino\home.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\icons\cupertino\menu.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\icons\fluent\home.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\icons\fluent\menu.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\icons\material\home.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\icons\material\menu.png" />
+    </ItemGroup>
+
 </Project>
