@@ -1,0 +1,13 @@
+@inherits AppComponent
+
+<PageTitle>@AppState.PageTitle - UnoDrive</PageTitle>
+
+@code {
+    [Parameter, EditorRequired] public string PageTitle { get; set; } = default!;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        AppState.PageTitleSet(PageTitle);
+    }
+}

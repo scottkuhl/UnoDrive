@@ -6,7 +6,7 @@ public class AppState
     
     public event Action? OnChange;
     
-    public string Theme { get; private set; } = string.Empty;
+    public string PageTitle { get; private set; } = string.Empty;
     
     public void Initialize()
     {
@@ -15,6 +15,13 @@ public class AppState
             _isInitialized = true;
         }
 
+        OnChange?.Invoke();
+    }
+
+    public void PageTitleSet(string value)
+    {
+        if (PageTitle == value) return;
+        PageTitle = value;
         OnChange?.Invoke();
     }
 }
